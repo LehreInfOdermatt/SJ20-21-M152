@@ -1,0 +1,25 @@
+body>div {
+    background-color: lightgrey;
+    box-shadow: #777279 1px 1px;
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        border-radius: 50%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    div{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        &.title {
+            font-weight: bold;
+        }
+    }
+    button{
+        background-color: chartreuse;
+        width: 80%;
+        margin: 20px;   
+    }
+}
