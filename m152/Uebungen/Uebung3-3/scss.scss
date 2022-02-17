@@ -1,0 +1,35 @@
+.person {
+    background-color: lightgrey;
+    box-shadow: #777279 1px 1px;
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 2s;
+
+    &:hover {
+        transition: all 2s;
+        padding: 20px;
+
+        button {
+            background-color: darkgreen;
+        }
+    }
+
+    &__image {
+        border-radius: 50%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    &__button{
+        background-color: chartreuse;
+        width: 80%;
+        margin: 20px;   
+    }
+    &__title {
+        font-weight: bold;
+        &--red{
+            color: red;
+        }
+    }
+}
