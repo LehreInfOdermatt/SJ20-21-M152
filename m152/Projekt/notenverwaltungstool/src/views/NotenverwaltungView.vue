@@ -89,8 +89,6 @@ function displayGrade(grade) {
 <style lang="scss">
 main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-top: 30px;
   margin-bottom: 30px;
   >div {
@@ -114,12 +112,15 @@ footer {
 }
 @media screen and (min-width: 550px) {
   main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     >div {
       >h1 {
         font-size: large;
         font-weight: bold;
       }
-      width: 50vw;
+      width: 300px;
       margin: 5px;
     }
   }
@@ -134,6 +135,8 @@ footer {
 }
 @media screen and (max-width: 550px) {
   main {
+    flex-direction: column;
+    align-items: center;
     >div {
       >h1 {
         font-size: medium;
